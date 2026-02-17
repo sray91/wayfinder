@@ -112,6 +112,16 @@ a:hover {
   color: var(--sage-600);
 }
 
+/* Header CTA - hidden on mobile */
+.header-cta {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .header-cta {
+    display: inline-flex !important;
+  }
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;

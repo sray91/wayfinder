@@ -78,7 +78,7 @@ export default function Header() {
                     </div>
 
                     {/* CTA Button */}
-                    <Link href="/book-a-consultation" className="hidden md:flex btn btn-primary text-sm">
+                    <Link href="/book-a-consultation" className="header-cta btn btn-primary text-sm">
                         Book a Consultation
                     </Link>
 

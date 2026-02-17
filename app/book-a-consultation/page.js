@@ -9,7 +9,7 @@ export default function BookConsultation() {
     return (
         <div className="pt-24">
             {/* Hero */}
-            <section className="section bg-gradient-to-br from-[var(--sage-50)] via-[var(--cream)] to-[var(--teal-50)]">
+            <section className="section bg-gradient-to-br from-[var(--sage-50)] via-[var(--cream)] to-[var(--teal-50)]" style={{ paddingBottom: '1rem' }}>
                 <div className="container mx-auto">
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="inline-block px-4 py-2 bg-[var(--sage-100)] text-[var(--sage-700)] rounded-full text-sm font-medium mb-6">
@@ -18,7 +18,7 @@ export default function BookConsultation() {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
                             Book a <span className="gradient-text">Consultation</span>
                         </h1>
-                        <p className="text-xl text-[var(--text-secondary)] mb-8">
+                        <p className="text-xl text-[var(--text-secondary)]">
                             Taking the first step towards better mental health is an act of courage.
                             We're here to support you on your journey.
                         </p>
@@ -27,7 +27,7 @@ export default function BookConsultation() {
             </section>
 
             {/* What to Expect & Contact Info */}
-            <section className="section">
+            <section className="section" style={{ paddingTop: '1rem' }}>
                 <div className="container mx-auto">
                     <div className="max-w-2xl mx-auto">
                         <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>

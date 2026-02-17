@@ -295,7 +295,7 @@ export default function Home() {
                   </svg>
                   <div>
                     <p className="text-[var(--sage-300)] text-sm">Email</p>
-                    <a href="mailto:crystal.a.hank@gmail.com" className="hover:text-[var(--sage-200)] transition-colors">
+                    <a href="mailto:crystal.a.hank@gmail.com" className="hover:text-[var(--sage-200)] transition-colors" style={{ color: 'var(--sage-700)' }}>
                       crystal.a.hank@gmail.com
                     </a>
                   </div>
@@ -306,7 +306,7 @@ export default function Home() {
                   </svg>
                   <div>
                     <p className="text-[var(--sage-300)] text-sm">Phone</p>
-                    <a href="tel:843-800-0954" className="hover:text-[var(--sage-200)] transition-colors">
+                    <a href="tel:843-800-0954" className="hover:text-[var(--sage-200)] transition-colors" style={{ color: 'var(--sage-700)' }}>
                       843-800-0954
                     </a>
                   </div>

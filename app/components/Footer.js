@@ -14,7 +14,7 @@ const services = [
 export default function Footer() {
     return (
         <footer className="bg-[var(--sage-900)] text-white">
-            <div className="container mx-auto px-6 py-16">
+            <div className="container mx-auto px-6" style={{ paddingTop: '5rem', paddingBottom: '5rem' }}>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Brand */}
                     <div className="lg:col-span-1">
@@ -34,7 +34,7 @@ export default function Footer() {
 
                     {/* Services */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                        <h4 className="text-lg font-bold mb-4" style={{ color: 'white' }}>
                             Services
                         </h4>
                         <ul className="space-y-2">
@@ -53,7 +53,7 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                        <h4 className="text-lg font-bold mb-4" style={{ color: 'white' }}>
                             Quick Links
                         </h4>
                         <ul className="space-y-2">
@@ -82,7 +82,7 @@ export default function Footer() {
 
                     {/* Contact Info */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                        <h4 className="text-lg font-bold mb-4" style={{ color: 'white' }}>
                             Contact Info
                         </h4>
                         <ul className="space-y-3">
