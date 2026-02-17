@@ -330,7 +330,7 @@ export default function Home() {
                 <p>1 Carriage Lane Building B, Suite 102, Charleston, SC 29407</p>
               </div>
 
-              <Link href="/book-a-consultation" className="inline-flex btn bg-white text-[var(--sage-700)] hover:bg-[var(--sage-50)] text-lg px-10 py-4">
+              <Link href="/book-a-consultation" className="inline-flex btn text-lg px-10 py-4" style={{ background: 'var(--sage-700)', color: 'white', boxShadow: '0 0 20px rgba(93, 110, 79, 0.5)' }}>
                 Book a Consultation
               </Link>
             </div>
