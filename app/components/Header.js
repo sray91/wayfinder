@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
     { name: "Individual Counseling", href: "/individual-counseling" },
@@ -21,30 +22,16 @@ export default function Header() {
             <div className="container mx-auto px-6 py-4">
                 <nav className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--sage-500)] to-[var(--teal-600)] flex items-center justify-center">
-                            <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z"
-                                    fill="white"
-                                    opacity="0.9"
-                                />
-                            </svg>
-                        </div>
-                        <div>
-                            <span className="text-xl font-semibold text-[var(--text-primary)]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                                Wayfinder
-                            </span>
-                            <span className="hidden sm:block text-xs text-[var(--text-muted)] tracking-wide">
-                                Mental Wellness
-                            </span>
-                        </div>
+                    <Link href="/">
+                        <Image
+                            src="/light-logo.png"
+                            alt="Wayfinder Mental Wellness"
+                            width={120}
+                            height={120}
+                            className="w-auto"
+                            style={{ height: '95px', width: 'auto' }}
+                            priority
+                        />
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -66,7 +53,8 @@ export default function Header() {
                             </button>
 
                             {isServicesOpen && (
-                                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-[var(--warm-200)] py-2 animate-fade-in-up" style={{ animationDuration: '0.2s' }}>
+                                <div className="absolute top-full left-0 pt-2 w-64 animate-fade-in-up" style={{ animationDuration: '0.2s' }}>
+                                <div className="bg-white rounded-2xl shadow-xl border border-[var(--warm-200)] py-2">
                                     {services.map((service) => (
                                         <Link
                                             key={service.href}
@@ -76,6 +64,7 @@ export default function Header() {
                                             {service.name}
                                         </Link>
                                     ))}
+                                </div>
                                 </div>
                             )}
                         </div>

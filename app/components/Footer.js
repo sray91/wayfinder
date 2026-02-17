@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
     { name: "Individual Counseling", href: "/individual-counseling" },
@@ -17,25 +18,14 @@ export default function Footer() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Brand */}
                     <div className="lg:col-span-1">
-                        <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--sage-400)] to-[var(--teal-500)] flex items-center justify-center">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z"
-                                        fill="white"
-                                        opacity="0.9"
-                                    />
-                                </svg>
-                            </div>
-                            <span className="text-xl font-semibold" style={{ fontFamily: 'Playfair Display, serif' }}>
-                                Wayfinder
-                            </span>
+                        <div className="mb-4">
+                            <Image
+                                src="/dark-logo.png"
+                                alt="Wayfinder Mental Wellness"
+                                width={180}
+                                height={180}
+                                className="h-12 w-auto"
+                            />
                         </div>
                         <p className="text-[var(--sage-300)] text-sm leading-relaxed">
                             Guiding you towards better mental health and personal growth with compassion and expertise.
@@ -100,8 +90,8 @@ export default function Footer() {
                                 <svg className="w-5 h-5 mt-0.5 text-[var(--sage-400)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                <a href="mailto:info@wayfindermentalwellness.com" className="text-[var(--sage-300)] hover:text-white text-sm transition-colors">
-                                    info@wayfindermentalwellness.com
+                                <a href="mailto:crystal.a.hank@gmail.com" className="text-[var(--sage-300)] hover:text-white text-sm transition-colors">
+                                    crystal.a.hank@gmail.com
                                 </a>
                             </li>
                             <li className="flex items-start gap-3">

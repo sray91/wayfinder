@@ -295,8 +295,8 @@ export default function Home() {
                   </svg>
                   <div>
                     <p className="text-[var(--sage-300)] text-sm">Email</p>
-                    <a href="mailto:info@wayfindermentalwellness.com" className="hover:text-[var(--sage-200)] transition-colors">
-                      info@wayfindermentalwellness.com
+                    <a href="mailto:crystal.a.hank@gmail.com" className="hover:text-[var(--sage-200)] transition-colors">
+                      crystal.a.hank@gmail.com
                     </a>
                   </div>
                 </div>
