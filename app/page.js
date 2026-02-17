@@ -51,16 +51,19 @@ const teamMembers = [
   {
     name: "Crystal Hank, Psy.D., LP",
     title: "Licensed Psychologist",
+    image: "/crystal.png",
     href: "/crystal-hank",
   },
   {
     name: "Hannah Shoemaker, M.A., LPC-A",
     title: "Licensed Professional Counselor Associate",
+    image: "/hannah.png",
     href: "/hannah-shoemaker",
   },
   {
     name: "Vincent Bianculli, M.A., LPC-A",
     title: "Licensed Professional Counselor Associate",
+    image: "/vincent.png",
     href: "/vincent",
   },
 ];

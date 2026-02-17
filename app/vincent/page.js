@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
     title: "Vincent Bianculli, M.A., LPC-A | Wayfinder Mental Wellness",
@@ -11,27 +12,68 @@ export default function VincentBianculli() {
             {/* Hero */}
             <section className="section bg-gradient-to-br from-[var(--sage-50)] via-[var(--cream)] to-[var(--teal-50)]">
                 <div className="container mx-auto">
-                    <div className="max-w-4xl mx-auto">
-                        <div className="grid md:grid-cols-2 gap-12 items-center">
-                            <div className="relative h-80 md:h-96 rounded-3xl bg-gradient-to-br from-[var(--sage-200)] to-[var(--teal-200)] overflow-hidden flex items-center justify-center">
-                                <svg className="w-32 h-32 text-[var(--sage-400)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                </svg>
+                    <div className="max-w-5xl mx-auto">
+                        <div className="grid md:grid-cols-2 gap-12 items-start">
+                            <div>
+                                <span className="inline-block px-4 py-2 bg-[var(--sage-100)] text-[var(--sage-700)] rounded-full text-sm font-medium tracking-widest uppercase mb-6">
+                                    Meet the Team
+                                </span>
+                                <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+                                    Vincent Bianculli (he/him), <span className="gradient-text">MA, LPC-A</span>
+                                </h1>
+                                <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
+                                    <p>
+                                        I am passionate about creating a safe, inclusive, and affirming
+                                        space for individuals and couples navigating life&#39;s challenges.
+                                    </p>
+                                    <p>
+                                        With a focus on LGBTQ+ issues, anxiety, depression, and couples
+                                        therapy, I offer compassionate support tailored to your unique
+                                        experiences.
+                                    </p>
+                                    <p>
+                                        I have worked with clients in a range of settings including,
+                                        inpatient treatment, community mental health centers, Veteran
+                                        Affairs couples clinic, and intensive outpatient treatment for
+                                        drug and alcohol recovery.
+                                    </p>
+                                    <p>
+                                        No matter where you are in life, you deserve to live authentically
+                                        and find peace within. Whether you&#39;re seeking to explore your
+                                        identity as part of the LGBTQ+ community, address
+                                        anxiety/depression, or strengthen your relationship, I am here to
+                                        help.
+                                    </p>
+                                    <p>
+                                        My approach blends Cognitive Behavioral Therapy (CBT) and
+                                        mindfulness techniques, ensuring that you feel seen, heard, and
+                                        supported in your journey towards healing and self-acceptance.
+                                    </p>
+                                </div>
+                                <p className="mt-6 flex items-center gap-2 text-[var(--text-primary)] font-semibold">
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    (843) 258-1257
+                                </p>
                             </div>
                             <div>
-                                <span className="inline-block px-4 py-2 bg-[var(--sage-100)] text-[var(--sage-700)] rounded-full text-sm font-medium mb-4">
-                                    Licensed Professional Counselor Associate
-                                </span>
-                                <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                                    Vincent Bianculli, <span className="gradient-text">M.A., LPC-A</span>
-                                </h1>
-                                <p className="text-lg text-[var(--text-secondary)] mb-6">
-                                    Vincent Bianculli is a Licensed Professional Counselor Associate
-                                    dedicated to providing supportive, culturally-sensitive mental health care.
-                                </p>
-                                <Link href="/book-a-consultation" className="btn btn-primary">
-                                    Book a Session
-                                </Link>
+                                <div className="relative h-[500px] rounded-3xl bg-gradient-to-br from-[var(--sage-200)] to-[var(--teal-200)] overflow-hidden">
+                                    <Image
+                                        src="/vincent.png"
+                                        alt="Vincent Bianculli"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                                <div className="mt-6 space-y-3">
+                                    <div className="flex items-center gap-3">
+                                        <svg className="w-5 h-5 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                        </svg>
+                                        <span className="text-[var(--text-primary)] font-medium">Licensed Professional Counselor Associate in South Carolina</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
