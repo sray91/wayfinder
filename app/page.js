@@ -327,7 +327,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <p>1 Carriage Lane Building B, Suite 102, Charleston, SC 29407</p>
+                <p>1 Carriage Lane Building D, Suite 205, Charleston, SC 29407</p>
               </div>
 
               <Link href="/book-a-consultation" className="inline-flex btn text-lg px-10 py-4" style={{ background: 'var(--sage-700)', color: 'white', boxShadow: '0 0 20px rgba(93, 110, 79, 0.5)' }}>
